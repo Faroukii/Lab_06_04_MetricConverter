@@ -6,7 +6,7 @@ public class Main {
         double meters = 0;
         String trash = "";
         System.out.println("Provide any amount in meters: ");
-
+    //The system starts out with asking the user any amount in meters
         if (in.hasNextInt())
         {
             meters = in.nextDouble();
@@ -14,10 +14,12 @@ public class Main {
             System.out.println("You have this many in miles:" + (meters/1609.344));
             System.out.println("You have this many in inches: " + (meters * 39.3701));
         }
+        //The system gives the user the 3 different conversions at once
         else
         {
             trash = in.nextLine();
             System.out.println("Please enter correct value: " + trash);
+            //Formulating the code for when anything other than a double is typed in
         }
     }
 }
